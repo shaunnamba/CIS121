@@ -93,7 +93,7 @@ elif num1==num2 or num1==num3 or num3==num2:
 else:
     print('Unique')
 '''
-'''
+
 grade= int(input("Enter your grade: "))
 time= input("Enter time: ")
 if grade=="k"or grade==1 or grade==2 or grade==3:
@@ -111,7 +111,7 @@ else:
         print("11am")
      else:
         print("3pm")
-'''
+
 '''
 pick1=int(input("pick side: "))
 pick2=int(input("pick side: "))
@@ -123,23 +123,7 @@ elif pick1==pick2 or pick2==pick3 or pick3==pick1:
 else:
     print("scalene")
 '''
-age=int(input())
-athletism=input("goal?: ")
-if age>=20 and age<=39:
-    if athletism=='above average':
-        print("47-72")
-    else:
-        print("73-93")
-elif age<=59:
-    if athletism=='above average':
-        print("46-71")
-    else:
-        print("72-94")
-else:
-    if athletism=='above average':
-        print("45-70")
-    else:
-        print("71-97")
+
 
 
 
