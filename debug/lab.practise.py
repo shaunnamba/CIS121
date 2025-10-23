@@ -39,15 +39,17 @@
 # print(get_indices([1,0,5,0,7],7))
 
 #14
-def is_two_digit_number(num):
-    return num>=10 and num<=99
-def report_two_digit_numbers(lyst):
-    result=[]
-    for num in lyst:
-        if is_two_digit_number(num):
-            result.append(num)
-    return result
-print(report_two_digit_numbers([100,23,4,57,189]))
+# def is_two_digit_number(num):
+#     return num>=10 and num<=99
+# def report_two_digit_numbers(lyst):
+#     result=[]
+#     for num in lyst:
+#         if is_two_digit_number(num):
+#             result.append(num)
+#     return result
+# print(report_two_digit_numbers([100,23,4,57,189]))
+
+
 
 
 

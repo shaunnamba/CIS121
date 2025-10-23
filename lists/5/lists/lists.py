@@ -182,15 +182,15 @@ print(workday)
 
 
 
-'''
+
 def skip_letter(word):
     result=[]
-    for i in range(1,len(word),2):
+    for i in range(0,len(word),2):
         result.append(word[i])
     return result
 
-print(skip_letter("banana sunday"))
-'''
+print(skip_letter("counterattack"))
+
 
 '''
 def output_even(smaller_num, larger_num):

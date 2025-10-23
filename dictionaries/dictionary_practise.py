@@ -206,7 +206,7 @@ def majority_element(nums):
         else:
             count-=1
     return numbers
-print(majority_element([3,3,2,2,2,2,3]))
+print(majority_element([3,3,2,2,2,2,3 ]))
 
 
 
