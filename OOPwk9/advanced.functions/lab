@@ -1,0 +1,163 @@
+# # from random import randint
+# # def toss_coin(guess=0):
+# #     value=randint(0,1)
+# #     if guess==value:
+# #         return "correct"
+# #     else:
+# #         return "Incorrect"
+# # print(toss_coin(1))
+
+# # def randomGenerator(guess='even'):
+# #     number=randint(0,9)
+# #     if number%2==0:
+# #         result= "even"
+# #     else:
+# #         result= "odd"
+# #     if guess==result:
+# #         return "correct"
+# #     else:
+# #         return "incorrect"
+# # print(randomGenerator(3))
+
+# # def count_duplicates(num1=0,num2=0,num3=0):
+# #     if num1==num2==num3:
+# #         return "There are 3 of the same number"
+# #     elif num1==num2 or num1==num3 or num2==num3:
+# #         return "There are 2 of the same number"
+# #     else:
+# #         return "each number is unique"
+# # print(count_duplicates(0,0,0))
+
+# # def find_winner(player1="rock", player2="rock"):
+# #     if player1==player2:
+# #         return "Its a tie"
+# #     if (player1=="rock"and player2=="scissors") or \
+# #        (player1=="scissors" and player2=="paper")or \
+# #        (player1=="paper"and player2=="rock"):
+# #         return "player 1 wins"
+# #     else:
+# #         return "player 2 wins"
+# # print(find_winner())
+
+
+# # def find_relation(name=""):
+# #     if name=="darth vader":
+# #         return "father"
+# #     elif name=="Leia":
+# #         return "Sister"
+# #     elif name=="Han":
+# #         return "Brother in law"
+# #     elif name=="R2D2":
+# #         return "Droid"
+# #     else:
+# #         return "Unkown"
+# # print(find_relation())
+
+# # def hailstone_seq(n=40):
+# #     while n!=1:
+# #         print(n,end=" ")
+# #         if n%2==0:
+# #             n//=2
+# #         else:
+# #             n=3*n+1
+# #     print(1)
+# # print(hailstone_seq(25))
+
+
+# # def ascending_order(num1,num2=5,num3=25):
+# #     if num1>num2:
+# #         num1,num2=num2,num1
+# #     if num1>num3:
+# #         num1,num3=num3,num1
+# #     if num2>num3:
+# #         num2,num3=num3,num2
+# #     return [num1,num2,num3]
+# # print(ascending_order(10,1))
+
+# # def decending_order(num1,num2=5,num3=25):
+# #     if num1<num2:
+# #         num1,num2=num2,num1
+# #     if num1<num3:
+# #         num1,num3=num3,num1
+# #     if num2<num3:
+# #         num2,num3=num3,num2
+# #     return [num1,num2,num3]
+# # print(decending_order(10,1))
+
+# # def get_indices(lyst,value=0):
+# #     result=[]
+# #     for numbers in range(len(lyst)):
+# #         if lyst[numbers]==value:
+# #             result.append(numbers)
+# #     return result
+# # print(get_indices([1,5,5,0,7],7))
+
+# # def find_factors(num=36):
+# #     output=[]
+# #     for i in range(1,num+1):
+# #         if num%i==0:
+# #            print(i,end=" ")
+# # (find_factors(12))
+
+# def list_of_multiples(num,length=5):
+#     result=[]
+#     for i in range(1,length+1):
+#         result.append(num*i)
+#     return result
+# print(list_of_multiples(7,5))
+
+# def is_even(num):
+#     return num%2==0
+# def reports_even(lyst):
+#     result=[]
+#     for num in lyst:
+#         if is_even(num):
+#             result.append(num)
+#     return result
+# print(reports_even([4,3,12,16,8,9,25]))
+
+# def is_vowel(letter):
+#     return letter in ['a','e','i','o','u']
+# def report_vowels(word):
+#     vowels=[]
+#     for i in word:
+#         if is_vowel(i):
+#             vowels.append(i)
+#     return vowels
+# print(report_vowels("apple"))
+
+
+# def is_two_digit(num):
+#     return  num>=10 and num<=99
+# def report_two_digit(lyst):
+#     result=[]
+#     for i in lyst:
+#         if is_two_digit(i):
+#             result.append(i)
+#     return result
+# print(report_two_digit([100,57,12,1]))
+    
+# def is_negative(num):
+#     return num<0
+# def is_odd(num):
+#     return num%2==1
+# def report_negative(lyst):
+#     result=[]
+#     for i in lyst:
+#         if is_negative(i) and is_odd(i):
+#             result.append(i)
+#     return result
+# print(report_negative([100,-57,12,1,-15]))
+
+
+
+
+
+
+def design_rug(width, length, pattern):
+	result = "Your rug is:\n"
+	for i in range(length -1):
+		result += pattern * width
+		if i < length - 1:
+			result += "\t"
+	return result

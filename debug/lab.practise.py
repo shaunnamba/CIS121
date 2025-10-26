@@ -7,7 +7,7 @@
 #     if num2>num3:
 #         num2,num3=num3,num2
 #     return [num1,num2,num3]
-
+# print(ascending_order(10))
 #15
 # def is_negative(num):
 #     if num<0:
