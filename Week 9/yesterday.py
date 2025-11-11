@@ -44,5 +44,8 @@ print(planet2)
 #         self.fur=_fur
 # def type_of_dog(breed):
     
-
+import random
+card=["w","w","w","f","h","t"]
+random_card=random.choice(card)
+print(random_card)
         
